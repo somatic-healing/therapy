@@ -53,13 +53,15 @@
     </style>
 </head>
 <body class="text-deepblue">
-  <!-- Navigation -->
+  
+<!-- Navigation -->
   <nav class="bg-white shadow-sm fixed w-full z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-20 items-center">
         <div class="flex-shrink-0 flex items-center">
           <span class="serif text-2xl font-semibold text-clay">Jo Chan | Embodied IFS</span>
         </div>
+        <!-- Desktop Menu -->
         <div class="hidden md:block">
           <div class="ml-10 flex items-center space-x-8">
             <a href="#" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
@@ -70,13 +72,28 @@
             <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium">Contact</a>
           </div>
         </div>
+        <!-- Mobile Menu Button -->
         <div class="md:hidden">
-          <button class="text-deepblue focus:outline-none">
-            <i data-feather="menu"></i>
+          <button id="mobile-menu-button" class="text-deepblue focus:outline-none">
+            <i data-feather="menu" id="menu-icon"></i>
+            <i data-feather="x" id="close-icon" class="hidden"></i>
           </button>
         </div>
       </div>
     </div>
+    
+  <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#" class="block px-3 py-2 text-sm font-medium text-deepblue hover:text-clay hover:bg-sand rounded-md mobile-link">Home</a>
+        <a href="#about" class="block px-3 py-2 text-sm font-medium text-deepblue hover:text-clay hover:bg-sand rounded-md mobile-link">About</a>
+         <a href="#approach" class="block px-3 py-2 text-sm font-medium text-deepblue hover:text-clay hover:bg-sand rounded-md mobile-link">My Approach</a>
+        <a href="#what-to-expect" class="block px-3 py-2 text-sm font-medium text-deepblue hover:text-clay hover:bg-sand rounded-md mobile-link">What to Expect</a>
+        <a href="#services" class="block px-3 py-2 text-sm font-medium text-deepblue hover:text-clay hover:bg-sand rounded-md mobile-link">Services</a>
+        <a href="#contact" class="block px-3 py-2 text-sm font-medium text-deepblue hover:text-clay hover:bg-sand rounded-md mobile-link">Contact</a>
+      </div>
+    </div>
+
   </nav>
 
   <!-- Hero Section -->
@@ -105,23 +122,21 @@
   <section id="about" class="py-20 bg-sand">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-        <div class="lg:col-span-5 mb-10 lg:mb-0" data-aos="fade-right">
-          <img src="https://somatic-healing.github.io/therapy/images/headshot.jpg" alt="Jo Chan" class="rounded-lg shadow-lg w-full h-auto object-cover">
-        </div>
-        <div class="lg:col-span-7 flex items-center" data-aos="fade-left">
+        <!-- Text content - appears first on mobile, left on desktop -->
+        <div class="lg:col-span-7 flex items-center mb-10 lg:mb-0" data-aos="fade-right">
           <div>
             <h2 class="serif text-3xl md:text-4xl font-bold mb-6">
               About Jo
             </h2>
             <p class="mb-6">
-              I’m Jo Chan, a Certified Internal Family Systems Practitioner and Somatic Healing Arts Practitioner with over twenty years of experience in mindfulness, yoga, Buddhist psychology, and trauma-informed therapy. I believe healing happens when all parts of you feel safe, seen, and valued. My intention is to offer gentle yet full presence—creating a compassionate, non-judgmental space where you can explore at your own pace, without rushing or fixing.
-              </p>
+              I'm Jo Chan, a Certified Internal Family Systems Practitioner and Somatic Healing Arts Practitioner with over twenty years of experience in mindfulness, yoga, Buddhist psychology, and trauma-informed therapy. I believe healing happens when all parts of you feel safe, seen, and valued. My intention is to offer gentle yet full presence—creating a compassionate, non-judgmental space where you can explore at your own pace, without rushing or fixing.
+            </p>
             <p class="mb-6">
               I specialize in combining Somatic IFS® and Somatic Experiencing® with the Internal Family Systems model. This means we work not just with your thoughts and emotions, but with the wisdom held in your body. Every pattern of behavior, thought, and feeling carries important meaning. When we listen deeply to what your body knows and welcome all parts of your experience, profound transformation becomes possible.
-              </p>
+            </p>
             <p class="mb-6">
-              My approach is grounded in thousands of hours of personal retreat practice, extensive professional training, and my own healing journey through years of personal therapy. This allows me to accompany you with both clinical expertise and embodied understanding. Whether you have an existing meditation or mindfulness practice, or are new to somatic work, I’ll meet you exactly where you are.
-              </p>
+              My approach is grounded in thousands of hours of personal retreat practice, extensive professional training, and my own healing journey through years of personal therapy. This allows me to accompany you with both clinical expertise and embodied understanding. Whether you have an existing meditation or mindfulness practice, or are new to somatic work, I'll meet you exactly where you are.
+            </p>
             <div class="flex flex-wrap gap-4">
               <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
                 <i data-feather="award" class="text-clay mr-2"></i>
@@ -141,6 +156,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="lg:col-span-5" data-aos="fade-left">
+          <img src="https://somatic-healing.github.io/therapy/images/headshot.jpg" alt="Jo Chan" class="rounded-lg shadow-lg w-full h-auto object-cover">
         </div>
       </div>
     </div>
@@ -557,6 +575,30 @@
   </script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+    
+    // Close menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
   </script>
 </body>
 </html>
