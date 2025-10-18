@@ -411,73 +411,90 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-16">
-        <div class="mb-10 lg:mb-0" data-aos="fade-right">
-          <h2 class="serif text-3xl md:text-4xl font-bold mb-6">
-            Ready to Begin?
-          </h2>
-          <p class="mb-8">
-            Schedule a complimentary 20-minute consultation to see if we're a good fit for working together.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <i data-feather="mail" class="text-clay mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-medium">Email</h4>
-                <p>hello@embodiedifs.com</p>
-              </div>
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+      <div class="mb-10 lg:mb-0" data-aos="fade-right">
+        <h2 class="serif text-3xl md:text-4xl font-bold mb-6">
+          Ready to Begin?
+        </h2>
+        <p class="mb-8">
+          Schedule a complimentary 20-minute consultation to see if we're a good fit for working together.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <i data-feather="mail" class="text-clay mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-medium">Email</h4>
+              <p>hello@embodiedifs.com</p>
             </div>
-            <div class="flex items-start">
-              <i data-feather="calendar" class="text-clay mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-medium">Availability</h4>
-                <p>Monday - Friday, 9am - 5pm EST</p>
-              </div>
+          </div>
+          <div class="flex items-start">
+            <i data-feather="calendar" class="text-clay mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-medium">Availability</h4>
+              <p>Monday - Friday, 9am - 5pm EST</p>
             </div>
-            <div class="flex items-start">
-              <i data-feather="globe" class="text-clay mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-medium">Location</h4>
-                <p>Online sessions via secure video platform</p>
-              </div>
+          </div>
+          <div class="flex items-start">
+            <i data-feather="globe" class="text-clay mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-medium">Location</h4>
+              <p>Online sessions via secure video platform</p>
             </div>
           </div>
         </div>
-        <div data-aos="fade-left">
-          <form class="space-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium">Full Name</label>
-              <input type="text" id="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium">Email</label>
-              <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
-            </div>
-            <div>
-              <label for="service" class="block text-sm font-medium">Service Interested In</label>
-              <select id="service" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
-                <option>Discovery Session</option>
-                <option>Ongoing Therapy</option>
-                <option>Intensive Package</option>
-                <option>Not Sure - Need Guidance</option>
-              </select>
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium">What brings you to therapy?</label>
-              <textarea id="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay"></textarea>
-            </div>
-            <div>
-              <button type="submit" class="btn-hover w-full bg-clay hover:bg-taupe text-white font-medium py-3 px-4 rounded-md shadow-sm">
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
+      </div>
+      <div data-aos="fade-left">
+        <form action="https://formsubmit.co/allthatjunk@tuta.io" method="POST" class="space-y-6">
+          <!-- Honeypot for spam protection -->
+          <input type="text" name="_honey" style="display:none">
+          
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          
+          <!-- Custom thank you page (optional) -->
+          <input type="hidden" name="_next" value="https://somatic-healing.github.io/therapy/#contact">
+          
+          <!-- Custom subject line -->
+          <input type="hidden" name="_subject" value="New Contact Form Submission - Embodied IFS">
+          
+          <div>
+            <label for="name" class="block text-sm font-medium">Full Name</label>
+            <input type="text" name="name" id="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input type="email" name="email" id="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
+          </div>
+          
+          <div>
+            <label for="service" class="block text-sm font-medium">Service Interested In</label>
+            <select name="service" id="service" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
+              <option value="">Select a service...</option>
+              <option>Discovery Session</option>
+              <option>Ongoing Therapy</option>
+              <option>Intensive Package</option>
+              <option>Not Sure - Need Guidance</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-medium">What brings you to therapy?</label>
+            <textarea name="message" id="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay"></textarea>
+          </div>
+          
+          <div>
+            <button type="submit" class="btn-hover w-full bg-clay hover:bg-taupe text-white font-medium py-3 px-4 rounded-md shadow-sm">
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-deepblue text-white py-12">
