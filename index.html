@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embodied IFS | Somatic Internal Family Systems Therapy</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sage: '#8A9A8A',
+              clay: '#D4B483',
+              sand: '#EFE6DD',
+              taupe: '#B8A38D',
+              deepblue: '#3A4E5F',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #EFE6DD;
+      }
+      .serif {
+        font-family: 'Cormorant Garamond', serif;
+      }
+      .hero-bg {
+        background-image: linear-gradient(rgba(58, 78, 95, 0.7), rgba(58, 78, 95, 0.7)), url('http://static.photos/wellness/1200x630/42');
+        background-size: cover;
+        background-position: center;
+      }
+      .nav-link:hover {
+        color: #D4B483;
+        transition: all 0.3s ease;
+      }
+      .btn-hover {
+        transition: all 0.3s ease;
+      }
+      .btn-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+</head>
+<body class="text-deepblue">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <span class="serif text-2xl font-semibold text-clay">Jo Chan | Somatic Healing Arts</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-8">
+            <a href="#" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
+            <a href="#about" class="nav-link px-3 py-2 text-sm font-medium">About</a>
+            <a href="#approach" class="nav-link px-3 py-2 text-sm font-medium">My Approach</a>
+            <a href="#services" class="nav-link px-3 py-2 text-sm font-medium">Services</a>
+            <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button class="text-deepblue focus:outline-none">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="text-center md:text-left" data-aos="fade-up">
+        <h1 class="serif text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          Gentle Presence for <span class="text-clay">All Your Parts</span>
+        </h1>
+        <p class="text-xl text-sand max-w-2xl mx-auto md:mx-0 mb-10">
+          "My intention is to show up with gentle yet full presence and attention, to be with all of your parts and experience that unfolds in our time together"
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#contact" class="btn-hover bg-clay hover:bg-taupe text-white font-medium py-3 px-8 rounded-full">
+            Book a Session
+          </a>
+          <a href="#approach" class="btn-hover bg-transparent border-2 border-white hover:border-clay text-white hover:text-clay font-medium py-3 px-8 rounded-full">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+        <div class="lg:col-span-5 mb-10 lg:mb-0" data-aos="fade-right">
+          <img src="http://static.photos/people/640x360/23" alt="Therapist" class="rounded-lg shadow-lg w-full h-auto object-cover">
+        </div>
+        <div class="lg:col-span-7 flex items-center" data-aos="fade-left">
+          <div>
+            <h2 class="serif text-3xl md:text-4xl font-bold mb-6">
+              Meet Your Guide
+            </h2>
+            <p class="mb-6">
+              I'm Jo Chan, a somatic healing arts practitioner with over two decades of practice in mindfulness, yoga, and Buddhist psychology. I believe all patterns of behavior, thought or feeling come with important and valuable hidden meanings. My focus is creating a safe space where all parts of you are welcomed at your own pace.
+            </p>
+            <p class="mb-6">
+              With thousands of hours of retreat practice and professional trauma-informed training, I combine Somatic IFS® and Somatic Experiencing® to help you heal relationships with your body and access its inherent wisdom. This integration with meditation practices creates powerful holistic change.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                <i data-feather="award" class="text-clay mr-2"></i>
+                <span class="text-sm">IFS Level 3 Certified</span>
+              </div>
+              <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                <i data-feather="heart" class="text-clay mr-2"></i>
+                <span class="text-sm">Somatic IFS® Practitioner</span>
+              </div>
+              <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                <i data-feather="activity" class="text-clay mr-2"></i>
+                <span class="text-sm">Somatic Experiencing®</span>
+              </div>
+              <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                <i data-feather="globe" class="text-clay mr-2"></i>
+                <span class="text-sm">Sliding Scale Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach Section -->
+  <section id="approach" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="serif text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+          A Unique Approach to Healing
+        </h2>
+        <p class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Blending evidence-based therapy with somatic wisdom to create lasting transformation
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-sand p-8 rounded-lg shadow-sm hover:shadow-md transition-all" data-aos="fade-up">
+          <div class="w-12 h-12 bg-clay rounded-full flex items-center justify-center mb-4">
+            <i data-feather="layers" class="text-white"></i>
+          </div>
+          <h3 class="serif text-xl font-semibold mb-3">Parts Work</h3>
+          <p>
+            Discover and befriend the different parts of your psyche with the non-pathologizing, compassionate approach of IFS.
+          </p>
+        </div>
+        <div class="bg-sand p-8 rounded-lg shadow-sm hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-clay rounded-full flex items-center justify-center mb-4">
+            <i data-feather="activity" class="text-white"></i>
+          </div>
+          <h3 class="serif text-xl font-semibold mb-3">Somatic Awareness</h3>
+          <p>
+            Learn to listen to your body's wisdom as we work with sensations, movement, and breath to deepen healing.
+          </p>
+        </div>
+        <div class="bg-sand p-8 rounded-lg shadow-sm hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 bg-clay rounded-full flex items-center justify-center mb-4">
+            <i data-feather="compass" class="text-white"></i>
+          </div>
+          <h3 class="serif text-xl font-semibold mb-3">Spiritual Integration</h3>
+          <p>
+            For those who desire it, we'll explore how your healing journey connects with your spiritual path.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-20 bg-deepblue text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="serif text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+          Client Experiences
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-sage p-8 rounded-lg" data-aos="fade-right">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-clay mr-4 overflow-hidden">
+              <img src="http://static.photos/people/200x200/1" alt="Client" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-semibold">Amanda R.</h4>
+              <p class="text-sm text-sand">Executive Coach</p>
+            </div>
+          </div>
+          <p class="italic">
+            "Working with Sarah has been transformative. As someone who's done years of traditional therapy, IFS combined with somatic work helped me access deeper layers of healing I didn't know were possible."
+          </p>
+        </div>
+        <div class="bg-sage p-8 rounded-lg" data-aos="fade-left">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-clay mr-4 overflow-hidden">
+              <img src="http://static.photos/people/200x200/2" alt="Client" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-semibold">Michael T.</h4>
+              <p class="text-sm text-sand">Tech Founder</p>
+            </div>
+          </div>
+          <p class="italic">
+            "Sarah's approach helped me integrate my meditation practice with psychological healing. I've become more present in my relationships and more effective in my work."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="serif text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+          Personalized Services
+        </h2>
+        <p class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Tailored to your unique needs and goals
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-sm" data-aos="fade-up">
+          <h3 class="serif text-xl font-semibold mb-4">Initial Consultation</h3>
+          <p class="text-clay text-2xl font-medium mb-4">Sliding Scale Available</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>90-minute initial consultation</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Assessment of your needs</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Personalized recommendations</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn-hover inline-block bg-clay hover:bg-taupe text-white font-medium py-2 px-6 rounded-full text-sm">
+            Book Now
+          </a>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg transform scale-105 z-10" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute top-0 right-0 bg-clay text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+            MOST POPULAR
+          </div>
+          <h3 class="serif text-xl font-semibold mb-4">Ongoing Sessions</h3>
+          <p class="text-clay text-2xl font-medium mb-4">Sliding Scale Available</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>60-minute weekly sessions</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Customized somatic IFS work</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Between-session support</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Optional spiritual integration</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn-hover inline-block bg-clay hover:bg-taupe text-white font-medium py-2 px-6 rounded-full text-sm">
+            Book Now
+          </a>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="serif text-xl font-semibold mb-4">Community Support</h3>
+          <p class="text-clay text-2xl font-medium mb-4">Pro Bono Available</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Four 90-minute sessions</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Deep dive into specific issues</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Personalized practices</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check" class="text-clay mr-2"></i>
+              <span>Priority scheduling</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn-hover inline-block bg-clay hover:bg-taupe text-white font-medium py-2 px-6 rounded-full text-sm">
+            Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+        <div class="mb-10 lg:mb-0" data-aos="fade-right">
+          <h2 class="serif text-3xl md:text-4xl font-bold mb-6">
+            Ready to Begin?
+          </h2>
+          <p class="mb-8">
+            Schedule a complimentary 20-minute consultation to see if we're a good fit for working together.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <i data-feather="mail" class="text-clay mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-medium">Email</h4>
+                <p>hello@embodiedifs.com</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-feather="calendar" class="text-clay mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-medium">Availability</h4>
+                <p>Monday - Friday, 9am - 5pm EST</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-feather="globe" class="text-clay mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-medium">Location</h4>
+                <p>Online sessions via secure video platform</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium">Full Name</label>
+              <input type="text" id="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
+            </div>
+            <div>
+              <label for="service" class="block text-sm font-medium">Service Interested In</label>
+              <select id="service" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay">
+                <option>Discovery Session</option>
+                <option>Ongoing Therapy</option>
+                <option>Intensive Package</option>
+                <option>Not Sure - Need Guidance</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium">What brings you to therapy?</label>
+              <textarea id="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-clay focus:border-clay"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn-hover w-full bg-clay hover:bg-taupe text-white font-medium py-3 px-4 rounded-md shadow-sm">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-deepblue text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <h3 class="serif text-xl font-semibold mb-4">Jo Chan | Somatic Healing Arts</h3>
+          <p class="text-sand">
+            Integrating Somatic IFS®, Somatic Experiencing®, and mindfulness practices to create safe space for all your parts.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-sand hover:text-clay transition">Home</a></li>
+            <li><a href="#about" class="text-sand hover:text-clay transition">About</a></li>
+            <li><a href="#approach" class="text-sand hover:text-clay transition">Approach</a></li>
+            <li><a href="#services" class="text-sand hover:text-clay transition">Services</a></li>
+            <li><a href="#contact" class="text-sand hover:text-clay transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Connect</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-sand hover:text-clay transition">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" class="text-sand hover:text-clay transition">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="text-sand hover:text-clay transition">
+              <i data-feather="youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-sage mt-12 pt-8 text-sm text-sand">
+        <div class="md:flex md:items-center md:justify-between">
+          <p>© 2023 Embodied IFS. All rights reserved.</p>
+          <div class="mt-4 md:mt-0">
+            <a href="#" class="text-sand hover:text-clay transition">Privacy Policy</a>
+            <span class="mx-2">•</span>
+            <a href="#" class="text-sand hover:text-clay transition">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
