@@ -171,7 +171,7 @@
     </div>
   </section>
 
-  <!-- Approach Section -->
+    <!-- Approach Section -->
   <section id="approach" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -183,32 +183,46 @@
         </p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
+        <!-- IFS Card -->
         <div class="bg-deepblue p-8 rounded-lg shadow-sm hover:shadow-md transition-all text-white" data-aos="fade-up">
           <div class="w-12 h-12 bg-sand rounded-full flex items-center justify-center mb-4">
             <i data-feather="layers" class="text-black"></i>
           </div>
           <h3 class="serif text-xl font-semibold mb-3">Internal Family Systems (IFS)</h3>
-          <p>
+          <p class="mb-4">
             Discover and befriend the different parts within you through this compassionate, non-pathologizing approach. IFS honors that every part of you—even those causing pain—has a positive intention and valuable wisdom to share.
-            </p>
+          </p>
+          <button onclick="openModal('ifs-modal')" class="text-clay hover:text-sand transition text-sm font-medium flex items-center">
+            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </button>
         </div>
+
+        <!-- Somatic Healing Card -->
         <div class="bg-deepblue p-8 rounded-lg shadow-sm hover:shadow-md transition-all text-white" data-aos="fade-up" data-aos-delay="100">
           <div class="w-12 h-12 bg-sand rounded-full flex items-center justify-center mb-4">
             <i data-feather="activity" class="text-black"></i>
           </div>
           <h3 class="serif text-xl font-semibold mb-3">Somatic Healing</h3>
-          <p>
-          Your body holds profound wisdom. Through gentle attention to sensations, breath, and felt experience, we access the intelligence of your nervous system and unlock healing that goes beyond words alone.
-            </p>
+          <p class="mb-4">
+            Your body holds profound wisdom. Through gentle attention to sensations, breath, and felt experience, we access the intelligence of your nervous system and unlock healing that goes beyond words alone.
+          </p>
+          <button onclick="openModal('somatic-modal')" class="text-clay hover:text-sand transition text-sm font-medium flex items-center">
+            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </button>
         </div>
+
+        <!-- Contemplative Integration Card -->
         <div class="bg-deepblue p-8 rounded-lg shadow-sm hover:shadow-md transition-all text-white" data-aos="fade-up" data-aos-delay="200">
           <div class="w-12 h-12 bg-sand rounded-full flex items-center justify-center mb-4">
             <i data-feather="compass" class="text-black"></i>
           </div>
           <h3 class="serif text-xl font-semibold mb-3">Contemplative Integration</h3>
-          <p>
+          <p class="mb-4">
             If meaningful to you, we can weave your existing meditation, mindfulness, or spiritual practices into our therapeutic work—creating a powerful synergy between inner exploration and embodied transformation.
-            </p>
+          </p>
+          <button onclick="openModal('contemplative-modal')" class="text-clay hover:text-sand transition text-sm font-medium flex items-center">
+            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -680,6 +694,140 @@
       </div>
 
       <button onclick="closeModal('terms-modal')" class="mt-6 btn-hover bg-clay hover:bg-taupe text-white font-medium py-3 px-6 rounded-full w-full sm:w-auto">
+        Close
+      </button>
+    </div>
+  </div>
+  
+  <!-- IFS Modal -->
+  <div id="ifs-modal" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+    <div class="bg-white rounded-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl">
+      <div class="flex justify-between items-start mb-6">
+        <h3 class="serif text-2xl font-bold text-deepblue">Internal Family Systems (IFS)</h3>
+        <button onclick="closeModal('ifs-modal')" class="text-gray-500 hover:text-gray-700">
+          <i data-feather="x"></i>
+        </button>
+      </div>
+      
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">What is IFS?</h4>
+          <p class="text-sm">Internal Family Systems is an evidence-based psychotherapy that recognizes we all have different "parts"—sub-personalities with their own perspectives, feelings, and roles. Rather than pathologizing these parts, IFS honors that each one developed to help us survive and cope.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">How It Works</h4>
+          <p class="text-sm">Through gentle curiosity and compassion, we help you get to know your parts—the inner critic, the people-pleaser, the protector, the wounded child. As you build relationship with these parts and understand their positive intentions, they naturally begin to soften and transform.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">The Role of Self</h4>
+          <p class="text-sm">Beneath all the parts is your core Self—the calm, curious, compassionate presence that can lead your internal system. IFS helps you access this Self-energy and bring healing to the parts that need it most.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">My Training</h4>
+          <p class="text-sm">I'm a Level 3 Certified IFS Practitioner through the IFS Institute, with additional training in Somatic IFS® and IFIO (Intimacy from the Inside Out for relational work). I also serve as a Program Assistant for IFS trainings.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">What to Expect</h4>
+          <p class="text-sm">Sessions are gentle and collaborative. We move at your pace, never forcing. You might close your eyes and turn inward, or we might dialogue about what you're noticing. The work is about curiosity, not fixing—trusting that your system knows how to heal when given the right conditions.</p>
+        </div>
+      </div>
+      
+      <button onclick="closeModal('ifs-modal')" class="mt-6 btn-hover bg-clay hover:bg-taupe text-white font-medium py-3 px-6 rounded-full w-full sm:w-auto">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Somatic Healing Modal -->
+  <div id="somatic-modal" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+    <div class="bg-white rounded-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl">
+      <div class="flex justify-between items-start mb-6">
+        <h3 class="serif text-2xl font-bold text-deepblue">Somatic Healing</h3>
+        <button onclick="closeModal('somatic-modal')" class="text-gray-500 hover:text-gray-700">
+          <i data-feather="x"></i>
+        </button>
+      </div>
+      
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Why the Body Matters</h4>
+          <p class="text-sm">Trauma, stress, and emotional patterns aren't just stored in our minds—they live in our bodies. Your nervous system holds memories, tensions, and protective responses that talk therapy alone may not reach. Somatic work brings the body into the healing process.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Somatic IFS®</h4>
+          <p class="text-sm">This approach combines traditional IFS with body-centered awareness. We track sensations, movements, and impulses as we work with your parts. A part might show up as tension in your chest, a heaviness in your shoulders, or an urge to curl up small. By including these somatic experiences, healing becomes more embodied and complete.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Somatic Experiencing®</h4>
+          <p class="text-sm">Developed by Peter Levine, SE® helps resolve trauma by gently working with the body's natural capacity to discharge stuck survival energy. We pay attention to subtle shifts in sensation, breath, and nervous system activation—supporting your body to complete defensive responses that may have been interrupted during overwhelming experiences.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">What Happens in Session</h4>
+          <p class="text-sm">I might invite you to notice sensations in your body, track your breath, or explore gentle movements. We work slowly and titrate—never overwhelming your system. The goal is to help your nervous system feel safe enough to release, reorganize, and restore its natural resilience.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">My Training</h4>
+          <p class="text-sm">I'm trained in Somatic IFS® (including serving as Staff Assistant to Susan McConnell), Somatic Experiencing® at the Advanced Level, Trauma-Sensitive Yoga, Hakomi somatic psychotherapy, and Thai-Vedic Bodywork. I bring 20+ years of embodied practice through yoga, meditation, and mindful movement.</p>
+        </div>
+      </div>
+      
+      <button onclick="closeModal('somatic-modal')" class="mt-6 btn-hover bg-clay hover:bg-taupe text-white font-medium py-3 px-6 rounded-full w-full sm:w-auto">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Contemplative Integration Modal -->
+  <div id="contemplative-modal" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+    <div class="bg-white rounded-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl">
+      <div class="flex justify-between items-start mb-6">
+        <h3 class="serif text-2xl font-bold text-deepblue">Contemplative Integration</h3>
+        <button onclick="closeModal('contemplative-modal')" class="text-gray-500 hover:text-gray-700">
+          <i data-feather="x"></i>
+        </button>
+      </div>
+      
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Bridging Inner & Outer Work</h4>
+          <p class="text-sm">If you have an existing meditation, mindfulness, or spiritual practice, we can weave it into our therapeutic work. Many practitioners find that combining contemplative practice with psychotherapy creates powerful synergy—each deepening the other.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">My Background</h4>
+          <p class="text-sm">I bring over 20 years of dedicated practice in mindfulness meditation, Buddhist psychology, yoga, and thousands of hours of of retreat practices. This isn't just theory—it's lived experience that informs how I show up in session and the practices I might share with you.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">What This Looks Like</h4>
+          <p class="text-sm">We might explore how your meditation practice intersects with your parts work. Perhaps a protective part resists sitting still, or a spiritual bypassing part uses practice to avoid difficult feelings. We can work with these dynamics compassionately, helping your practice become more integrated and authentic.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Practices I Might Share</h4>
+          <p class="text-sm">Depending on what serves you, I might offer guidance in mindfulness techniques, body scan practices, loving-kindness meditation, breathwork, or somatic awareness exercises. These are always invitations, never prescriptions—tailored to your needs and comfort level.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Not Required</h4>
+          <p class="text-sm">You don't need any meditation or spiritual background to work with me. This integration is optional and only happens if it feels meaningful and supportive to you. My primary commitment is meeting you exactly where you are.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-deepblue mb-2">Training</h4>
+          <p class="text-sm">I'm certified as an Awakening Joy® Mindfulness Teacher, trained in Trauma-Sensitive Mindfulness®, and hold a 200-hour Ashtanga Yoga Teacher certification. I've studied Buddhist psychology extensively and maintain an active daily practice.</p>
+        </div>
+      </div>
+      
+      <button onclick="closeModal('contemplative-modal')" class="mt-6 btn-hover bg-clay hover:bg-taupe text-white font-medium py-3 px-6 rounded-full w-full sm:w-auto">
         Close
       </button>
     </div>
