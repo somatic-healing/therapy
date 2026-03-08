@@ -1044,7 +1044,7 @@
       // Form submission handler
       const form = document.getElementById("contact-form");
       form.addEventListener("submit", function (e) {
-        // e.preventDefault();
+        e.preventDefault();
         // Submit form via AJAX
         fetch(form.action, {
           method: "POST",
